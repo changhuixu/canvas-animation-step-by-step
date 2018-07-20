@@ -1,0 +1,21 @@
+.app {
+  text-align: center;
+  display: table;
+  margin: 50px auto;
+  max-width: 1296px;
+}
+
+.app p {
+  margin: 2.5rem 0 0.25rem 1rem;
+  text-align: left;
+  font-size: 1.25rem;
+}
+
+canvas {
+  border: #00aa33 1px solid;
+  margin: 0 1rem;
+}
+
+canvas#blooming-flowers {
+  background: radial-gradient( farthest-corner circle at left top, #90a020, #1f8c00);
+}
