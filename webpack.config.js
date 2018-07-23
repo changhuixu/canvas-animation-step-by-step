@@ -40,6 +40,9 @@ module.exports = {
         }, {
             from: 'src/favicon.ico',
             to: path.resolve(__dirname, 'dist')
+        }, {
+            from: 'src/sw.js',
+            to: path.resolve(__dirname, 'dist')
         }], {
             debug: 'info'
         })

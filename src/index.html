@@ -5,32 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name='author' content='Changhui Xu'>
+    <meta name='original-source' content='https://github.com/changhuixu/canvas-animation-step-by-step'>
     <title>Canvas Animation</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header style="text-align: center; color: #0130fd;">
-        <h1>Canvas Animation Step by Step</h1>
-        <p>Check out
-            <a title="GitHub Repo" href="https://github.com/changhuixu/canvas-animation-step-by-step">GitHub</a> for source code.</p>
-        <hr>
-    </header>
     <main class="app">
-        <canvas id="supplementary" width="500" height="600"></canvas>
-        <canvas id="blooming-flowers" width="500" height="600"></canvas>
-
-        <p>
-            <strong>Interactive Canvas: </strong> Click on the canvas to decorate flowers. Press Ctrl + Click or
-            <button id="clearBtn">Click Me</button> to clear canvas.</p>
-        <canvas id="interactive-flowers" width="1036" height="600"></canvas>
+        <div class="instruction">
+            <button id="clearBtn">Reset</button>
+        </div>
+        <canvas id="flowers" width="1000" height="600"></canvas>
     </main>
-    <footer style="text-align: center;">
-        <hr>
-        <p>Check out
-            <a title="GitHub Repo" href="https://github.com/changhuixu/canvas-animation-step-by-step">GitHub</a> for source code.</p>
-    </footer>
 </body>
 
 </html>
