@@ -38,7 +38,13 @@ module.exports = {
             from: 'src/style.css',
             to: path.resolve(__dirname, 'dist')
         }, {
-            from: 'src/favicon.ico',
+            from: 'src/browserconfig.xml',
+            to: path.resolve(__dirname, 'dist')
+        }, {
+            from: 'src/manifest.json',
+            to: path.resolve(__dirname, 'dist')
+        }, {
+            from: 'assets/*',
             to: path.resolve(__dirname, 'dist')
         }, {
             from: 'src/sw.js',
