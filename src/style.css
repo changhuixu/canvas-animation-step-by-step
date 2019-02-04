@@ -1,21 +1,18 @@
-.app {
-  text-align: center;
-  display: table;
-  margin: 50px auto;
-  max-width: 1296px;
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
 }
 
-.app p {
-  margin: 2.5rem 0 0.25rem 1rem;
-  text-align: left;
-  font-size: 1.25rem;
+.instruction {
+  position: fixed;
+  top: 0;
 }
 
-canvas {
-  border: #00aa33 1px solid;
-  margin: 0 1rem;
+#clearBtn {
+  padding: 6px;
 }
-
-canvas#blooming-flowers {
-  background: radial-gradient( farthest-corner circle at left top, #90a020, #1f8c00);
+#clearBtn:hover {
+  cursor: pointer;
 }
