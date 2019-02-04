@@ -8,6 +8,7 @@ node_js:
 branches:
   only:
     - pwa
+    - master
 
 before_script:
     - npm install -g firebase-tools
