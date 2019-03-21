@@ -5,7 +5,7 @@ var filesToCache = [
   '/style.css',
   '/favicon.ico',
   '/main.bundle.js',
-  '/manefest.json'
+  '/manifest.json'
 ];
 
 self.addEventListener('install', (e) => {
