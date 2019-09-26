@@ -12,26 +12,36 @@ This repo includes blooming flowers animation examples. The flower drawing was i
 
 1. **models**
 
-    flower.ts
+   flower.ts
 
-    flower-center.ts
+   flower-center.ts
 
-    petal.ts
+   petal.ts
 
-    point.ts
+   point.ts
 
 1. **services**
 
-    flower-randomization.service.ts
+   flower-randomization.service.ts
 
 1. **animations**
 
-    blooming-flowers.ts
+   blooming-flowers.ts
 
-    interactive-flowers.ts
+   interactive-flowers.ts
 
 ## Supplementary
 
 In order to show the steps of drawing flower, I also kept the "sandbox" that I played with in `supplementary` folder. The code in `supplementary` folder generates an illustration below.
 
 ![how to draw flower on canvas](./images/canvas-animation-1.png)
+
+## How to build locally
+
+```sh
+// run the animation app
+npm start
+
+// build the app
+npm run build
+```
