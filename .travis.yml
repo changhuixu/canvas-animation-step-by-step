@@ -3,7 +3,7 @@ sudo: false
 
 language: node_js
 node_js:
-  - '8'
+  - node
 
 branches:
   only:
@@ -11,7 +11,7 @@ branches:
     - master
 
 before_script:
-    - npm install -g firebase-tools
+  - npm install -g firebase-tools
 
 script:
   - npm run build
