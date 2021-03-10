@@ -8,20 +8,22 @@
   "description": "An example of canvas animations in TypeScript. The animation shows blooming flowers on canvas.",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --open",
-    "build": "webpack"
+    "start": "webpack serve --open",
+    "build": "webpack",
+    "ghpage": "npm run build:page && cp ./docs/index.html ./docs/404.html",
+    "build:page": "webpack --output-path docs"
   },
   "dependencies": {},
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
-    "copy-webpack-plugin": "^6.0.3",
-    "html-webpack-plugin": "^4.3.0",
-    "ts-loader": "^8.0.0",
-    "typescript": "^3.9.6",
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0",
-    "tslint": "^6.1.2",
-    "tslint-loader": "^3.5.4"
+    "copy-webpack-plugin": "^8.0.0",
+    "html-webpack-plugin": "^5.3.1",
+    "ts-loader": "^8.0.17",
+    "tslint": "^6.1.3",
+    "tslint-loader": "^3.5.4",
+    "typescript": "^4.2.3",
+    "webpack": "^5.24.4",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
   }
 }

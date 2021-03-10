@@ -15,62 +15,59 @@ module.exports = {
           {
             loader: 'tslint-loader',
             options: {
-              tsConfigFile: 'tsconfig.json'
-            }
-          }
-        ]
+              tsConfigFile: 'tsconfig.json',
+            },
+          },
+        ],
       },
       {
         test: /\.tsx?$/,
         use: 'ts-loader',
-        exclude: /node_modules/
-      }
-    ]
+        exclude: /node_modules/,
+      },
+    ],
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.js']
+    extensions: ['.tsx', '.ts', '.js'],
   },
   devtool: 'inline-source-map',
   devServer: {
-    contentBase: './dist'
+    contentBase: './dist',
   },
   plugins: [
     new CleanWebpackPlugin({
-      cleanOnceBeforeBuildPatterns: ['dist']
+      cleanOnceBeforeBuildPatterns: ['dist'],
     }),
     new HtmlWebpackPlugin({
-      template: 'src/index.html'
+      template: 'src/index.html',
     }),
-    new CopyWebpackPlugin(
-      [
+    new CopyWebpackPlugin({
+      patterns: [
         {
           from: 'src/style.css',
-          to: path.resolve(__dirname, 'dist')
+          to: path.resolve(__dirname, 'dist'),
         },
         {
           from: 'src/browserconfig.xml',
-          to: path.resolve(__dirname, 'dist')
+          to: path.resolve(__dirname, 'dist'),
         },
         {
           from: 'src/manifest.json',
-          to: path.resolve(__dirname, 'dist')
+          to: path.resolve(__dirname, 'dist'),
         },
         {
           from: 'assets/*',
-          to: path.resolve(__dirname, 'dist')
+          to: path.resolve(__dirname, 'dist'),
         },
         {
           from: 'src/sw.js',
-          to: path.resolve(__dirname, 'dist')
-        }
+          to: path.resolve(__dirname, 'dist'),
+        },
       ],
-      {
-        debug: 'info'
-      }
-    )
+    }),
   ],
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist')
-  }
+    path: path.resolve(__dirname, 'dist'),
+  },
 };
